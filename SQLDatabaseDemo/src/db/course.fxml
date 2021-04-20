@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="db.CourseController">
+    <children>
+        <TableView fx:id="tblCourse" layoutX="14.0" layoutY="68.0" prefHeight="232.0" prefWidth="773.0">
+            <columns>
+                <TableColumn fx:id="colClassID" prefWidth="100.11111068725586" text="Class #" />
+                <TableColumn fx:id="colClassName" prefWidth="127.66665649414062" text="Class Name" />
+                <TableColumn fx:id="colInstructorID" prefWidth="89.22225952148438" text="Instructor #" />
+                <TableColumn fx:id="colInstructorName" prefWidth="154.888916015625" text="Instructor Name" />
+                <TableColumn fx:id="colStartTime" prefWidth="108.11111450195312" text="Start Time" />
+                <TableColumn fx:id="colEndTime" prefWidth="117.22222900390625" text="End Time" />
+            </columns>
+        </TableView>
+        <Label text="Classes" textFill="#414ad3">
+            <font>
+                <Font size="44.0" />
+            </font>
+        </Label>
+        <Button fx:id="btnAdd" layoutX="250.0" layoutY="521.0" mnemonicParsing="false" onAction="#add" text="Add" />
+        <Button fx:id="btnDelete" layoutX="476.0" layoutY="521.0" mnemonicParsing="false" onAction="#delete" text="Delete" />
+        <Button fx:id="btnCancel" layoutX="734.0" layoutY="314.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" />
+        <Label layoutX="111.0" layoutY="399.0" text="Class number" />
+        <TextField fx:id="txtClassID" layoutX="104.0" layoutY="434.0" />
+        <TextField fx:id="txtInstructorID" layoutX="314.0" layoutY="434.0" />
+        <TextField fx:id="txtStudentID" layoutX="536.0" layoutY="434.0" />
+        <Label layoutX="320.0" layoutY="399.0" text="Instructor ID" />
+        <Label layoutX="546.0" layoutY="399.0" text="Student ID" />
+      <Label layoutX="76.0" layoutY="339.0" text="To add or remove an instructor to a class, leave StudentID blank. To add or remove a student to a class, fill out everything." textFill="BLUE" />
+    </children>
+</AnchorPane>
